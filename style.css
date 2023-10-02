@@ -1,0 +1,274 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Sacramento&display=swap");
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* Biar tanda kutip ilang */
+  caret-color: transparent;
+}
+
+nav {
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  background-color: rgba(126, 100, 100, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  width: 25px;
+  margin-left: 1.2rem;
+}
+
+.logo img {
+  text-decoration: none;
+  display: flex;
+  margin: 0;
+  width: 400%;
+  transition: ease 0.7;
+  -webkit-transition: ease 0.7;
+  -moz-transition: ease 0.7;
+  -ms-transition: ease 0.7;
+  -o-transition: ease 0.7;
+}
+
+.logo img:hover {
+  opacity: 0.7;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 227, 227, 0.8);
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  margin-right: 30px;
+  padding: 0 10px;
+  position: relative;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(167, 102, 102, 1);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width ease 0.3s;
+  -webkit-transition: width ease 0.3s;
+  -moz-transition: width ease 0.3s;
+  -ms-transition: width ease 0.3s;
+  -o-transition: width ease 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(247, 237, 237);
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+.background {
+  z-index: -999;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Biodata {
+  margin-top: 24rem;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.Song {
+  margin-top: 2.2rem;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.kotak-kiri {
+  color: white;
+  background-color: rgba(167, 102, 102, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  width: 40%;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.kotak-kiri span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.kotak-kiri-lagu {
+  color: white;
+  background-color: rgba(167, 102, 102, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  width: 30%;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.kotak-kiri-lagu span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.kotak-kanan span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.kotak-kanan-lagu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.kotak-kanan-lagu audio {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.job-hutao i {
+  font-size: 1.8rem;
+  opacity: 0.5;
+}
+
+.card {
+  margin-top: 10.5rem;
+  margin-left: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  width: 50%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 20px;
+  position: relative;
+}
+
+.card h1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 1.9rem;
+}
+
+.card p {
+  font-size: 1.22rem;
+  letter-spacing: 0.6;
+}
+
+.card img {
+  width: 24px;
+  margin-left: 20.5rem;
+}
+
+.card-dev {
+  margin-top: 10.5rem;
+  margin-left: 4rem;
+  background-color: rgba(220, 193, 193, 0.8);
+  backdrop-filter: blur(5px);
+  width: 30%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 18px;
+  position: relative;
+}
+
+.card-dev h1,
+.card-info h1 {
+  font-size: 2.2rem;
+}
+
+.card-dev p,
+.card-info p {
+  font-size: 1.2rem;
+}
+
+.card-info .small{
+  font-size: 0.9rem;
+  margin-bottom: 23px;
+  opacity: 0.6;
+}
+
+.card-info {
+  margin-top: 4.2rem;
+  margin-left: 4rem;
+  background-color: rgba(220, 193, 193, 0.8);
+  backdrop-filter: blur(5px);
+  width: 40%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 18px;
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+  top: 16.5rem;
+  right: 1.3rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
